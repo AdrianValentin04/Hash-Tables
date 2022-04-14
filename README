@@ -1,0 +1,48 @@
+/////////////////// Tema 1 /////// Tabele Hash ///////////////////
+
+Student: Gheorghe Adrian-Valentin
+Grupa: 331CB
+
+1. Organizare:
+
+Tema are ca subiect folosirea unei tabele hash (implementata cu
+ajutorul a unei liste de liste) pentru analiza unor propozitii 
+citite dintr-un fisier dat ca argument si citit cu ajutorul unei 
+"console interactive", reprezentata printr-ul while care citeste
+in continuu din fisier pana la finalul acestuia. 
+
+Scopul acesteia a fost de a ne ajuta la familiarizarea cu conceptul
+de alocare dinamica, cu tabelele hash si cu listele generice.
+
+2. Implementare:
+
+Cerinta temei cuprindea 2 mari comenzi de implementat - insert si
+print.
+
+a. Insert:
+
+Pentru comanda de insert, am implementat mai multe functii de
+comparare intre 2 obiecte generice. Prima data am ales sa merg 
+pe lista de lungimi si sa caut lungimea cuvantului pe care trebuie
+sa il inserez in acel moment. Daca lungimea nu exista in lista, o 
+adaug, apoi fac legatura intre celula corespunzatoare lungimii si
+sublista de cuvinte corespunzatoare. Daca lungimea exista, 
+ma duc pe sublista corespunzatoare ei si caut cuvantul pe care
+trebuie sa il inserez. Aici, ma uit dupa cuvantul pe care doresc
+sa il inserez. Daca acesta exista, atunci doar incrementez
+nr de aparitii, daca nu exista atunci doar il inserez.
+
+b. Print:
+
+Aici am facut cate o functie pentru fiecare tip de print(pentru
+niciun argument - afisare normala a tabelei hash, luata din laborator,
+pentru un argument - PrintOneArg asemanatoare cu cea de afisare a tabelei
+hash doar ca cu alte functii apelate si niste schimbari la printuri ca
+sa se conformeze cu formatul output-ului, si pentru 2 argumente -
+PrintTwoArg - asemanatoare cu printarea normala insa cu o conditie in plus.)
+Inainte sa apelez functiile de printare sortez sublistele pentru a le avea
+in ordinea ceruta - mai intai in ordinea aparitiilor, apoi lexicografica.
+
+3. Mentiuni:
+
+Am folosit functiile codHash, InitTH, DistrTH si AfiTH din laborator.
